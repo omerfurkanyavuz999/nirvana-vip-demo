@@ -1,0 +1,1704 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirvana Düğün Salonu | VIP Gala, Balo & Özel Davet Sarayı — Antalya</title>
+    <meta name="description" content="Kepez Habibler'de 750 kişilik kolonsuz balo salonu, kristal avizeli mimarisi, VIP gelin-damat süiti ve 4 mevsim iklimlendirme ayrıcalığıyla unutulmaz gala düğünleri.">
+
+    <!-- Google Fonts: Cinzel, Cormorant Garamond & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: {
+                            DEFAULT: '#060913',
+                            surface: '#0C1222',
+                            card: '#11192E',
+                            border: '#1E2942'
+                        },
+                        gold: {
+                            DEFAULT: '#D4AF37',
+                            light: '#F3E5AB',
+                            champagne: '#E6D29C',
+                            dark: '#997A1E'
+                        }
+                    },
+                    fontFamily: {
+                        display: ['"Cinzel"', 'Georgia', 'serif'],
+                        editorial: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Ultra-Luxury Black-Tie Gala Custom Styling + High-Contrast Ivory Light Mode Variables */
+        :root {
+            --bg-main: #060913;
+            --bg-surface: #0C1222;
+            --bg-card-inner: rgba(6, 9, 19, 0.85);
+            --text-primary: #F8FAFC;
+            --text-secondary: #CBD5E1;
+            --text-muted: #94A3B8;
+            --gold-accent: #D4AF37;
+            --gold-soft: #F3E5AB;
+            --glass-bg: linear-gradient(165deg, rgba(17, 25, 46, 0.78) 0%, rgba(8, 12, 24, 0.92) 100%);
+            --glass-border: rgba(212, 175, 55, 0.22);
+            --glass-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.75);
+            --header-bg: rgba(6, 9, 19, 0.85);
+            --pill-bg: rgba(255, 255, 255, 0.05);
+            --slider-track: rgba(255, 255, 255, 0.12);
+        }
+
+        html.light-theme {
+            --bg-main: #FAF7F0;
+            --bg-surface: #F2ECE0;
+            --bg-card-inner: #F8F4EB;
+            --text-primary: #18181B;
+            --text-secondary: #374151;
+            --text-muted: #4B5563;
+            --gold-accent: #8A6518;
+            --gold-soft: #704F0E;
+            --glass-bg: linear-gradient(165deg, rgba(255, 255, 255, 0.98) 0%, rgba(253, 250, 244, 0.99) 100%);
+            --glass-border: #D6C7A9;
+            --glass-shadow: 0 18px 40px -15px rgba(112, 79, 14, 0.14);
+            --header-bg: rgba(250, 247, 240, 0.94);
+            --pill-bg: #F3ECE0;
+            --slider-track: #DDD2BE;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            transition: background-color 0.35s ease, color 0.35s ease;
+        }
+
+        /* Metallic Brushed Gold Text & Gradients */
+        .text-gold-metallic {
+            background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 45%, #B8860B 75%, #F3E5AB 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+            animation: shimmerGold 6s linear infinite;
+        }
+
+        html.light-theme .text-gold-metallic {
+            background: linear-gradient(135deg, #704F0E 0%, #9A721E 45%, #5C3F08 80%, #8A6518 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+        }
+
+        .bg-gold-metallic {
+            background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #AA8214 100%);
+        }
+
+        .bg-gold-metallic:hover {
+            background: linear-gradient(135deg, #FFF3C4 0%, #E5C148 50%, #C4961A 100%);
+        }
+
+        html.light-theme .bg-gold-metallic {
+            background: linear-gradient(135deg, #9A721E 0%, #8A6518 55%, #704F0E 100%);
+            color: #FFFFFF !important;
+        }
+
+        html.light-theme .bg-gold-metallic:hover {
+            background: linear-gradient(135deg, #8A6518 0%, #704F0E 55%, #593D09 100%);
+            color: #FFFFFF !important;
+        }
+
+        @keyframes shimmerGold {
+            0% { background-position: 0% center; }
+            100% { background-position: 200% center; }
+        }
+
+        /* Glassmorphic VIP Card with 1px Champagne Border */
+        .vip-glass {
+            background: var(--glass-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--glass-shadow);
+            transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+        }
+
+        .vip-glass:hover {
+            border-color: rgba(212, 175, 55, 0.55);
+            box-shadow: 0 25px 60px -15px rgba(212, 175, 55, 0.16);
+        }
+
+        html.light-theme .vip-glass:hover {
+            border-color: #9A721E;
+            box-shadow: 0 22px 48px -15px rgba(112, 79, 14, 0.22);
+        }
+
+        /* High-Contrast Light Mode Overrides */
+        html.light-theme header {
+            background-color: var(--header-bg) !important;
+            border-bottom-color: #D6C7A9 !important;
+        }
+
+        html.light-theme .text-white {
+            color: #18181B !important;
+        }
+
+        /* Preserve crisp white typography on dark photo overlays */
+        html.light-theme .gallery-overlay-text,
+        html.light-theme .gallery-overlay-text h3,
+        html.light-theme .hero-live-pill-text {
+            color: #FFFFFF !important;
+        }
+
+        html.light-theme .gallery-overlay-text span {
+            color: #F3E5AB !important;
+        }
+
+        html.light-theme .hero-live-pill {
+            background-color: rgba(16, 20, 31, 0.86) !important;
+            border-color: rgba(212, 175, 55, 0.55) !important;
+        }
+
+        html.light-theme .text-slate-200,
+        html.light-theme .text-slate-300,
+        html.light-theme .text-slate-300\/90 {
+            color: #27272A !important;
+        }
+
+        html.light-theme .text-slate-400,
+        html.light-theme .text-slate-500 {
+            color: #4B5563 !important;
+        }
+
+        html.light-theme .text-gold-light,
+        html.light-theme .text-gold-champagne,
+        html.light-theme .text-gold-champagne\/75 {
+            color: #704F0E !important;
+        }
+
+        html.light-theme .text-gold {
+            color: #8A6518 !important;
+        }
+
+        html.light-theme .text-emerald-400,
+        html.light-theme .text-emerald-300 {
+            color: #047857 !important;
+        }
+
+        html.light-theme .bg-gold\/10,
+        html.light-theme .bg-gold\/15,
+        html.light-theme .bg-gold\/20 {
+            background-color: rgba(138, 101, 24, 0.12) !important;
+        }
+
+        html.light-theme .border-gold\/15,
+        html.light-theme .border-gold\/20,
+        html.light-theme .border-gold\/25,
+        html.light-theme .border-gold\/30,
+        html.light-theme .border-gold\/35,
+        html.light-theme .border-gold\/40 {
+            border-color: #D6C7A9 !important;
+        }
+
+        html.light-theme .bg-obsidian,
+        html.light-theme .bg-obsidian\/70,
+        html.light-theme .bg-obsidian\/75,
+        html.light-theme .bg-obsidian\/80,
+        html.light-theme .bg-obsidian\/85,
+        html.light-theme .bg-obsidian\/90,
+        html.light-theme .bg-obsidian\/95,
+        html.light-theme .bg-obsidian-card,
+        html.light-theme .bg-obsidian-card\/90 {
+            background-color: var(--bg-card-inner) !important;
+        }
+
+        html.light-theme .bg-obsidian-surface,
+        html.light-theme .bg-obsidian-surface\/90 {
+            background-color: var(--bg-surface) !important;
+        }
+
+        html.light-theme .bg-white\/5,
+        html.light-theme .bg-white\/10 {
+            background-color: var(--pill-bg) !important;
+        }
+
+        html.light-theme .hover\:bg-white\/10:hover {
+            background-color: #E8DEC8 !important;
+        }
+
+        html.light-theme .hover\:bg-gold:hover {
+            background-color: #8A6518 !important;
+            color: #FFFFFF !important;
+        }
+
+        html.light-theme .border-white\/10,
+        html.light-theme .border-white\/15 {
+            border-color: #D6C7A9 !important;
+        }
+
+        html.light-theme input[type="text"],
+        html.light-theme select {
+            background-color: #FFFFFF !important;
+            color: #18181B !important;
+            border-color: #CBB994 !important;
+        }
+
+        html.light-theme input[type="text"]:focus,
+        html.light-theme select:focus {
+            border-color: #8A6518 !important;
+        }
+
+        html.light-theme select option {
+            background-color: #FFFFFF;
+            color: #18181B;
+        }
+
+        html.light-theme input[type="range"].gold-slider::-webkit-slider-thumb {
+            background: linear-gradient(135deg, #9A721E, #704F0E);
+            border: 2px solid #FFFFFF;
+            box-shadow: 0 2px 8px rgba(112, 79, 14, 0.45);
+        }
+
+        /* Subtle Ambient Gold Dust Particles */
+        .gold-particle {
+            position: absolute;
+            border-radius: 9999px;
+            background: radial-gradient(circle, #F3E5AB 0%, rgba(212, 175, 55, 0) 70%);
+            pointer-events: none;
+            animation: floatDust var(--dur, 12s) ease-in-out infinite;
+            opacity: var(--op, 0.45);
+        }
+
+        html.light-theme .gold-particle {
+            background: radial-gradient(circle, #B68B2C 0%, rgba(182, 139, 44, 0) 70%);
+            opacity: 0.18;
+        }
+
+        @keyframes floatDust {
+            0%, 100% { transform: translateY(0px) translateX(0px) scale(1); }
+            50% { transform: translateY(-28px) translateX(14px) scale(1.25); }
+        }
+
+        /* Custom Gold Range Slider */
+        input[type="range"].gold-slider {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 6px;
+            background: var(--slider-track);
+            border-radius: 999px;
+            outline: none;
+        }
+
+        input[type="range"].gold-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #F3E5AB, #D4AF37);
+            border: 2px solid #060913;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.65);
+            cursor: pointer;
+            transition: transform 0.15s ease;
+        }
+
+        input[type="range"].gold-slider::-webkit-slider-thumb:hover {
+            transform: scale(1.15);
+        }
+
+        /* Hide horizontal scrollbar cleanly */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-gold selection:text-obsidian pb-24 md:pb-0">
+
+    <!-- Ambient Gold Dust Backdrop -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0" aria-hidden="true">
+        <div class="gold-particle w-2 h-2 top-[12%] left-[18%]" style="--dur: 14s; --op: 0.4;"></div>
+        <div class="gold-particle w-1.5 h-1.5 top-[28%] right-[22%]" style="--dur: 11s; --op: 0.5;"></div>
+        <div class="gold-particle w-3 h-3 top-[62%] left-[8%]" style="--dur: 16s; --op: 0.25;"></div>
+        <div class="gold-particle w-2 h-2 top-[75%] right-[14%]" style="--dur: 13s; --op: 0.35;"></div>
+        <div class="absolute -top-40 -right-40 w-[520px] h-[520px] rounded-full bg-gold/5 blur-[130px]"></div>
+        <div class="absolute top-1/2 -left-40 w-[440px] h-[440px] rounded-full bg-indigo-950/30 blur-[120px]"></div>
+    </div>
+
+    <!-- 1. Floating VIP Glassmorphic Header -->
+    <header class="sticky top-0 z-40 bg-obsidian/85 backdrop-blur-xl border-b border-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-2">
+            <!-- Royal Crest Brand -->
+            <a href="#" class="flex items-center gap-2.5 sm:gap-3 group shrink-0">
+                <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-gold/25 to-obsidian-card border border-gold/40 flex items-center justify-center shadow-[0_0_20px_rgba(212,175,55,0.2)]">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M12 2L15 8L21 9L16.5 14L17.5 20L12 17L6.5 20L7.5 14L3 9L9 8L12 2Z" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div>
+                    <span class="font-display text-base sm:text-xl font-bold tracking-[0.14em] text-gold-metallic block leading-none">
+                        NIRVANA
+                    </span>
+                    <span data-i18n="brandSubtitle" class="text-[9px] tracking-[0.26em] text-gold-champagne/75 uppercase font-semibold block mt-1">
+                        Düğün & Balo Sarayı
+                    </span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center gap-7 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-300">
+                <a href="#mimari-sim" data-i18n="navSimulator" class="hover:text-gold transition-colors">Oturma Planı</a>
+                <a href="#vip-ayricaliklar" data-i18n="navPrivileges" class="hover:text-gold transition-colors">VIP Ayrıcalıklar</a>
+                <a href="#gala-paketleri" data-i18n="navPackages" class="hover:text-gold transition-colors">Gala Paketleri</a>
+                <a href="#galeri" data-i18n="navGallery" class="hover:text-gold transition-colors">Galeri</a>
+            </nav>
+
+            <!-- Action Buttons + Sleek Theme Switcher & TR | EN Language Toggle -->
+            <div class="flex items-center gap-1.5 sm:gap-2.5">
+                <!-- Luxury Dark / Light Theme Toggle Button -->
+                <button type="button" onclick="toggleTheme()" id="theme-toggle-btn" aria-label="Tema Değiştir / Toggle Theme" title="Açık / Koyu Tema" class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-obsidian-card/90 border border-gold/30 hover:border-gold text-gold-champagne flex items-center justify-center shadow-inner transition-all">
+                    <!-- Sun Icon (Shown in Dark Mode to switch to Light) -->
+                    <svg id="icon-sun" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="4"/>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke-linecap="round"/>
+                    </svg>
+                    <!-- Moon Icon (Shown in Light Mode to switch to Dark) -->
+                    <svg id="icon-moon" class="w-4 h-4 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+                <!-- TR | EN Pill Toggle -->
+                <div class="inline-flex items-center p-1 rounded-xl bg-obsidian-card/90 border border-gold/30 shadow-inner" role="group" aria-label="Dil Seçimi / Language Switcher">
+                    <button type="button" onclick="setLanguage('tr')" id="lang-btn-tr" class="px-2 sm:px-2.5 py-1.5 rounded-lg text-[11px] font-bold tracking-wider bg-gold-metallic text-obsidian transition-all">
+                        TR
+                    </button>
+                    <button type="button" onclick="setLanguage('en')" id="lang-btn-en" class="px-2 sm:px-2.5 py-1.5 rounded-lg text-[11px] font-bold tracking-wider text-slate-300 hover:text-white transition-all">
+                        EN
+                    </button>
+                </div>
+
+                <a href="tel:+905012182325" class="inline-flex items-center gap-2 px-2.5 sm:px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-gold/25 text-xs font-semibold text-slate-200 transition-all">
+                    <svg class="w-3.5 h-3.5 text-gold shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    <span class="hidden md:inline">0501 218 23 25</span>
+                </a>
+
+                <a href="#vip-concierge" data-i18n="headerVipBtn" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-gold-metallic text-obsidian text-xs font-bold uppercase tracking-wider shadow-[0_0_25px_rgba(212,175,55,0.35)] transition-all">
+                    <span>VIP Randevu</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Cinematic Split Gala Hero -->
+    <section class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-12 sm:pt-12 sm:pb-16">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+
+            <!-- Left Editorial Column -->
+            <div class="lg:col-span-6 space-y-6">
+                <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-gold/10 border border-gold/30 text-gold-champagne text-xs font-medium tracking-wide">
+                    <span class="w-1.5 h-1.5 rounded-full bg-gold animate-pulse"></span>
+                    <span data-i18n="heroBadge">Kepez Habibler • Antalya’nın İkonik Balo Salonu</span>
+                </div>
+
+                <h1 class="font-display text-4xl sm:text-5xl lg:text-[54px] font-bold leading-[1.08] tracking-tight text-white">
+                    <span data-i18n="heroTitleLine1">Masalsı Gecenize</span> <br>
+                    <span data-i18n="heroTitleLine2" class="text-gold-metallic">Kraliyet İhtişamı</span>
+                </h1>
+
+                <p data-i18n="heroDesc" class="text-slate-300/90 text-sm sm:text-base leading-relaxed max-w-xl">
+                    660’ı aşkın mutlu çiftin tercihi Nirvana Düğün Salonu’nda; kolonsuz 750 kişilik panoramik mimari, kristal avize şıklığı, dört mevsim merkezi iklimlendirme ve kişiye özel VIP gala yönetimiyle kusursuz anlar tasarlıyoruz.
+                </p>
+
+                <!-- Hero CTA Cluster -->
+                <div class="pt-1 flex flex-col sm:flex-row gap-3.5">
+                    <a href="#vip-concierge" class="px-7 py-4 rounded-2xl bg-gold-metallic text-obsidian font-bold text-xs sm:text-sm uppercase tracking-[0.14em] shadow-[0_10px_30px_rgba(212,175,55,0.3)] transition-all flex items-center justify-center gap-2.5">
+                        <span data-i18n="heroCtaPrimary">VIP Tarih & Fiyat Al</span>
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#mimari-sim" class="px-7 py-4 rounded-2xl bg-white/5 hover:bg-white/10 border border-gold/30 text-gold-champagne font-semibold text-xs sm:text-sm uppercase tracking-[0.14em] transition-all flex items-center justify-center gap-2.5">
+                        <span data-i18n="heroCtaSecondary">Salon Planını İncele</span>
+                    </a>
+                </div>
+
+                <!-- 3-Card Luxury Metrics Bar -->
+                <div class="pt-4 grid grid-cols-3 gap-3 sm:gap-4">
+                    <div class="vip-glass rounded-2xl p-4">
+                        <div class="font-display text-xl sm:text-2xl font-bold text-gold-metallic">750</div>
+                        <div data-i18n="stat1Label" class="text-[11px] text-slate-400 font-medium mt-1">Kolonsuz Kapasite</div>
+                    </div>
+                    <div class="vip-glass rounded-2xl p-4">
+                        <div class="font-display text-xl sm:text-2xl font-bold text-gold-metallic">660+</div>
+                        <div data-i18n="stat2Label" class="text-[11px] text-slate-400 font-medium mt-1">Mutlu Çift Yorumu</div>
+                    </div>
+                    <div class="vip-glass rounded-2xl p-4">
+                        <div class="font-display text-xl sm:text-2xl font-bold text-gold-metallic">4 Mevsim</div>
+                        <div data-i18n="stat3Label" class="text-[11px] text-slate-400 font-medium mt-1">İklimlendirme & Vale</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Framed Ballroom Showcase Card -->
+            <div class="lg:col-span-6">
+                <div class="relative rounded-[28px] p-2 bg-gradient-to-b from-gold/40 via-gold/10 to-obsidian-card shadow-[0_25px_70px_rgba(0,0,0,0.85)]">
+                    <div class="relative rounded-[22px] overflow-hidden aspect-[4/3] bg-obsidian-surface">
+                        <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1400&q=85"
+                             alt="Nirvana Düğün Salonu Kristal Avizeli Balo Salonu"
+                             onerror="this.src='https://placehold.co/1200x900/0C1222/D4AF37?text=NIRVANA+BALLROOM'"
+                             class="w-full h-full object-cover object-center scale-[1.01] hover:scale-105 transition-transform duration-700">
+
+                        <!-- Deep Vignette Overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/25 to-transparent"></div>
+
+                        <!-- Top-Right Live Availability Pill -->
+                        <div class="hero-live-pill absolute top-4 right-4 sm:top-5 sm:right-5 bg-obsidian/80 backdrop-blur-md border border-gold/35 rounded-full px-3.5 py-1.5 flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                            <span data-i18n="heroAvailPill" class="hero-live-pill-text text-[11px] font-semibold text-white tracking-wide">2026 – 2027 Rezervasyonları Açık</span>
+                        </div>
+
+                        <!-- Bottom Floating VIP Architectural Plaque -->
+                        <div class="absolute bottom-4 left-4 right-4 sm:bottom-5 sm:left-5 sm:right-5 vip-glass rounded-2xl p-4 flex items-center justify-between gap-4">
+                            <div>
+                                <p data-i18n="heroPlaqueTitle" class="font-editorial text-lg sm:text-xl font-bold text-gold-light leading-tight">
+                                    Kırmızı Halı & Kristal Avize Konsepti
+                                </p>
+                                <p data-i18n="heroPlaqueSub" class="text-[11px] sm:text-xs text-slate-300 mt-0.5">
+                                    Kesintisiz Görüş Açılı Sahne • VIP Gelin Süiti • Özel Otopark
+                                </p>
+                            </div>
+                            <div class="w-10 h-10 rounded-xl bg-gold/15 border border-gold/40 text-gold flex items-center justify-center shrink-0">
+                                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <path d="M12 3l2.5 5.5L20 9.5l-4 4 1 5.5-5-2.8-5 2.8 1-5.5-4-4 5.5-1L12 3z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 3. Interactive Architectural Ballroom Floorplan & Capacity Simulator -->
+    <section id="mimari-sim" class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+        <div class="vip-glass rounded-[30px] p-6 sm:p-8 lg:p-10">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-8">
+                <div>
+                    <span data-i18n="simEyebrow" class="text-[11px] font-bold uppercase tracking-[0.26em] text-gold">İnteraktif Salon Planlayıcı</span>
+                    <h2 data-i18n="simHeading" class="font-display text-2xl sm:text-4xl font-bold text-white mt-1">Mimari Oturma & Sahne Simülatörü</h2>
+                </div>
+                <p data-i18n="simSub" class="text-xs sm:text-sm text-slate-400 max-w-md">
+                    Davetli sayınıza göre kolonsuz salonumuzun yuvarlak ziyafet masa yerleşimini, dans pisti genişliğini ve servis ekibi planlamasını canlı inceleyin.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <!-- Left Controls & Live Telemetry -->
+                <div class="lg:col-span-5 space-y-5">
+                    <div class="space-y-2.5">
+                        <label data-i18n="simSelectLabel" class="text-[11px] font-bold uppercase tracking-[0.2em] text-gold-champagne block">Kapasite Konfigürasyonu Seçin</label>
+                        <div class="grid grid-cols-3 gap-2.5">
+                            <button type="button" onclick="setFloorplanMode('350')" id="fp-btn-350" class="fp-mode-btn py-3 px-2 rounded-xl border border-gold/25 bg-white/5 text-slate-300 hover:border-gold/60 text-xs font-bold transition-all">
+                                <span data-i18n="simBtn350Top">350 Kişi</span>
+                                <span data-i18n="simBtn350Sub" class="block text-[10px] font-normal opacity-75 mt-0.5">Samimi Gala</span>
+                            </button>
+                            <button type="button" onclick="setFloorplanMode('550')" id="fp-btn-550" class="fp-mode-btn py-3 px-2 rounded-xl border border-gold bg-gold-metallic text-obsidian text-xs font-bold shadow-[0_0_20px_rgba(212,175,55,0.3)] transition-all">
+                                <span data-i18n="simBtn550Top">550 Kişi</span>
+                                <span data-i18n="simBtn550Sub" class="block text-[10px] font-normal opacity-80 mt-0.5">Klasik Balo</span>
+                            </button>
+                            <button type="button" onclick="setFloorplanMode('750')" id="fp-btn-750" class="fp-mode-btn py-3 px-2 rounded-xl border border-gold/25 bg-white/5 text-slate-300 hover:border-gold/60 text-xs font-bold transition-all">
+                                <span data-i18n="simBtn750Top">750 Kişi</span>
+                                <span data-i18n="simBtn750Sub" class="block text-[10px] font-normal opacity-75 mt-0.5">Görkemli Düğün</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Live Architectural Specs Readout -->
+                    <div class="grid grid-cols-2 gap-3.5">
+                        <div class="rounded-2xl bg-obsidian/70 border border-gold/20 p-4">
+                            <span data-i18n="simMetricTablesLabel" class="text-[10px] uppercase tracking-wider text-slate-400 block">Ziyafet Masası</span>
+                            <span id="fp-tables" class="font-display text-2xl font-bold text-gold-light mt-1 block">55 Masa</span>
+                            <span data-i18n="simMetricTablesSub" class="text-[11px] text-slate-400">10’ar Kişilik Yuvarlak</span>
+                        </div>
+                        <div class="rounded-2xl bg-obsidian/70 border border-gold/20 p-4">
+                            <span data-i18n="simMetricPistLabel" class="text-[10px] uppercase tracking-wider text-slate-400 block">Dans Pisti Alanı</span>
+                            <span id="fp-pist" class="font-display text-2xl font-bold text-gold-light mt-1 block">140 m²</span>
+                            <span data-i18n="simMetricPistSub" class="text-[11px] text-slate-400">Merkezi Kristal Pist</span>
+                        </div>
+                        <div class="rounded-2xl bg-obsidian/70 border border-gold/20 p-4">
+                            <span data-i18n="simMetricStaffLabel" class="text-[10px] uppercase tracking-wider text-slate-400 block">VIP Servis Ekibi</span>
+                            <span id="fp-staff" class="font-display text-2xl font-bold text-gold-light mt-1 block">28 Personel</span>
+                            <span data-i18n="simMetricStaffSub" class="text-[11px] text-slate-400">Şef Garson & Hostes</span>
+                        </div>
+                        <div class="rounded-2xl bg-obsidian/70 border border-gold/20 p-4">
+                            <span data-i18n="simMetricViewLabel" class="text-[10px] uppercase tracking-wider text-slate-400 block">Sahne Görüş Açısı</span>
+                            <span class="font-display text-2xl font-bold text-emerald-400 mt-1 block">%100</span>
+                            <span data-i18n="simMetricViewSub" class="text-[11px] text-slate-400">Tam Kolonsuz Mimari</span>
+                        </div>
+                    </div>
+
+                    <button type="button" onclick="syncSimulatorToConcierge()" class="w-full py-3.5 px-5 rounded-2xl bg-white/5 hover:bg-gold hover:text-obsidian border border-gold/35 text-gold-champagne font-bold text-xs uppercase tracking-[0.16em] transition-all flex items-center justify-center gap-2">
+                        <span data-i18n="simSyncBtn">Bu Kapasiteyi Teklif Formuna Aktar</span>
+                        <span>→</span>
+                    </button>
+                </div>
+
+                <!-- Right Live Architectural SVG Blueprint -->
+                <div class="lg:col-span-7">
+                    <div class="rounded-3xl bg-obsidian/90 border border-gold/25 p-4 sm:p-6 relative overflow-hidden">
+                        <div class="flex items-center justify-between text-[11px] text-slate-400 mb-3">
+                            <span data-i18n="svgTopLeft" class="uppercase tracking-widest text-gold-champagne font-semibold">Kuşbakışı Salon Yerleşim Planı</span>
+                            <span id="fp-badge-label" class="px-2.5 py-0.5 rounded-full bg-gold/15 text-gold font-semibold">550 Kişilik Klasik Balo Düzeni</span>
+                        </div>
+
+                        <!-- Dynamic SVG Ballroom Diagram -->
+                        <svg id="ballroom-svg" viewBox="0 0 640 360" class="w-full h-auto rounded-2xl bg-[#070B16] border border-gold/15 transition-colors duration-300">
+                            <defs>
+                                <radialGradient id="pistGlow" cx="50%" cy="50%" r="50%">
+                                    <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.28"/>
+                                    <stop offset="100%" stop-color="#D4AF37" stop-opacity="0.02"/>
+                                </radialGradient>
+                            </defs>
+
+                            <!-- Outer Ballroom Walls -->
+                            <rect id="svg-outer-wall" x="16" y="16" width="608" height="328" rx="18" fill="none" stroke="#D4AF37" stroke-opacity="0.35" stroke-width="1.5"/>
+
+                            <!-- Royal Main Stage (Top Center) -->
+                            <path id="svg-stage-shape" d="M 210 18 L 430 18 L 415 58 L 225 58 Z" fill="#D4AF37" fill-opacity="0.2" stroke="#D4AF37" stroke-width="1.5"/>
+                            <text id="svg-stage-label" x="320" y="42" text-anchor="middle" fill="#F3E5AB" font-size="11" font-family="Cinzel, serif" font-weight="700" letter-spacing="3">ANA SAHNE & NİKAH KÜRSÜSÜ</text>
+
+                            <!-- VIP Bridal Walk Aisle -->
+                            <rect id="svg-aisle-rect" x="304" y="58" width="32" height="268" fill="#D4AF37" fill-opacity="0.08" stroke="#D4AF37" stroke-opacity="0.25" stroke-dasharray="4 4"/>
+
+                            <!-- Central Crystal Dance Floor -->
+                            <circle id="svg-pist-circle" cx="320" cy="182" r="56" fill="url(#pistGlow)" stroke="#D4AF37" stroke-width="1.5"/>
+                            <text id="svg-pist-top" x="320" y="179" text-anchor="middle" fill="#F3E5AB" font-size="10" font-family="Cinzel, serif" font-weight="700" letter-spacing="2">KRİSTAL</text>
+                            <text id="svg-pist-bot" x="320" y="193" text-anchor="middle" fill="#D4AF37" font-size="9" font-family="Plus Jakarta Sans, sans-serif" letter-spacing="1.5">DANS PİSTİ</text>
+
+                            <!-- Dynamic Banquet Tables Layer -->
+                            <g id="svg-tables-layer"></g>
+
+                            <!-- VIP Entrance Bottom -->
+                            <rect id="svg-entrance-box" x="265" y="326" width="110" height="18" rx="6" fill="#D4AF37" fill-opacity="0.25" stroke="#D4AF37"/>
+                            <text id="svg-aisle-label" x="320" y="338" text-anchor="middle" fill="#F8FAFC" font-size="8.5" font-weight="700" letter-spacing="1.5">VIP GELİN YOLU GİRİŞİ</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Asymmetric VIP Bento Privileges Grid -->
+    <section id="vip-ayricaliklar" class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-6 gap-2">
+            <div>
+                <span data-i18n="bentoEyebrow" class="text-[11px] font-bold uppercase tracking-[0.26em] text-gold">Kusursuz Konfor</span>
+                <h2 data-i18n="bentoHeading" class="font-display text-2xl sm:text-4xl font-bold text-white mt-1">Nirvana VIP Ayrıcalıkları</h2>
+            </div>
+            <p data-i18n="bentoSub" class="text-xs sm:text-sm text-slate-400">Her mevsim aynı ihtişam ve eksiksiz teknik altyapı</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 sm:gap-5">
+            <!-- Bento 1 (2 cols): Kolonsuz Kristal Balo Mimarisi -->
+            <div class="md:col-span-2 vip-glass rounded-3xl p-6 sm:p-7 flex flex-col justify-between">
+                <div class="flex items-start justify-between">
+                    <div class="w-12 h-12 rounded-2xl bg-gold/15 border border-gold/35 text-gold flex items-center justify-center">
+                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/>
+                        </svg>
+                    </div>
+                    <span data-i18n="bento1Badge" class="px-3 py-1 rounded-full bg-gold/10 border border-gold/25 text-gold-champagne text-[11px] font-semibold">Yüksek Tavan & Kolonsuz</span>
+                </div>
+                <div class="mt-6">
+                    <h3 data-i18n="bento1Title" class="font-editorial text-2xl sm:text-3xl font-bold text-white">750 Kişilik Kolonsuz Balo Mimarisi</h3>
+                    <p data-i18n="bento1Desc" class="text-slate-300/85 text-xs sm:text-sm leading-relaxed mt-2">
+                        Salonun hiçbir noktasında görüşü engelleyen kolon bulunmaz. Özel tasarım kristal avizeler ve yüksek tavan ferahlığı ile en kalabalık davetlerde bile saray atmosferi sunar.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bento 2 (2 cols): VIP Gelin & Damat Hazırlık Süiti -->
+            <div class="md:col-span-2 vip-glass rounded-3xl p-6 sm:p-7 flex flex-col justify-between">
+                <div class="flex items-start justify-between">
+                    <div class="w-12 h-12 rounded-2xl bg-gold/15 border border-gold/35 text-gold flex items-center justify-center">
+                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M12 2l3 7h7l-5.5 4.5 2 7L12 16l-6.5 4.5 2-7L2 9h7l3-7z"/>
+                        </svg>
+                    </div>
+                    <span data-i18n="bento2Badge" class="px-3 py-1 rounded-full bg-gold/10 border border-gold/25 text-gold-champagne text-[11px] font-semibold">Özel Asistan & Kasa</span>
+                </div>
+                <div class="mt-6">
+                    <h3 data-i18n="bento2Title" class="font-editorial text-2xl sm:text-3xl font-bold text-white">VIP Gelin & Damat Hazırlık Süiti</h3>
+                    <p data-i18n="bento2Desc" class="text-slate-300/85 text-xs sm:text-sm leading-relaxed mt-2">
+                        Bağımsız iklimlendirmeli, özel lavabolu, şifreli emanet kasalı ve doğrudan sahne arkasına bağlanan lüks gelin-damat dinlenme odası.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bento 3 (1 col): 4 Mevsim İklimlendirme -->
+            <div class="md:col-span-1 vip-glass rounded-3xl p-6 flex flex-col justify-between">
+                <div class="w-11 h-11 rounded-2xl bg-gold/15 border border-gold/30 text-gold flex items-center justify-center">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M19.07 4.93L4.93 19.07"/>
+                    </svg>
+                </div>
+                <div class="mt-5">
+                    <h3 data-i18n="bento3Title" class="font-editorial text-xl font-bold text-white">4 Mevsim İklimlendirme</h3>
+                    <p data-i18n="bento3Desc" class="text-slate-400 text-xs leading-relaxed mt-1.5">
+                        Antalya sıcağında dahi ferahlık sağlayan yüksek kapasiteli merkezi klima ve taze hava sistemi.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bento 4 (1 col): Kesintisiz Güç & Akustik -->
+            <div class="md:col-span-1 vip-glass rounded-3xl p-6 flex flex-col justify-between">
+                <div class="w-11 h-11 rounded-2xl bg-gold/15 border border-gold/30 text-gold flex items-center justify-center">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                    </svg>
+                </div>
+                <div class="mt-5">
+                    <h3 data-i18n="bento4Title" class="font-editorial text-xl font-bold text-white">Kesintisiz Güç & Akustik</h3>
+                    <p data-i18n="bento4Desc" class="text-slate-400 text-xs leading-relaxed mt-1.5">
+                        Tam otomatik jeneratör, robotik sahne ışıkları ve kristal netliğinde konser akustiği.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bento 5 (2 cols): Geniş Otopark & Misafir Karşılama -->
+            <div class="md:col-span-2 vip-glass rounded-3xl p-6 flex flex-col justify-between">
+                <div class="flex items-start justify-between">
+                    <div class="w-11 h-11 rounded-2xl bg-gold/15 border border-gold/30 text-gold flex items-center justify-center">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <rect x="3" y="3" width="18" height="18" rx="4"/>
+                            <path d="M9 17V7h4a3 3 0 0 1 0 6H9"/>
+                        </svg>
+                    </div>
+                    <span data-i18n="bento5Badge" class="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-400/25 text-emerald-300 text-[11px] font-semibold">Engelsiz Erişim</span>
+                </div>
+                <div class="mt-5">
+                    <h3 data-i18n="bento5Title" class="font-editorial text-2xl font-bold text-white">Geniş Otopark & Karşılama Protokolü</h3>
+                    <p data-i18n="bento5Desc" class="text-slate-300/85 text-xs sm:text-sm leading-relaxed mt-1.5">
+                        Kepez Habibler’de ulaşımı kolay konum, davetlileriniz için geniş ücretsiz otopark ve girişte lokum/kolonya ikramlı hostes karşılaması.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Equal-Height Gala Packages & VIP Concierge WhatsApp Builder -->
+    <section id="gala-paketleri" class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+        <div class="mb-6">
+            <span data-i18n="pkgSectionEyebrow" class="text-[11px] font-bold uppercase tracking-[0.26em] text-gold">Kişiselleştirilmiş Organizasyon</span>
+            <h2 data-i18n="pkgSectionHeading" class="font-display text-2xl sm:text-4xl font-bold text-white mt-1">Gala Paketleri & VIP Concierge</h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+
+            <!-- Left Column: Interactive Gala Package Tabs -->
+            <div class="lg:col-span-6 vip-glass rounded-[28px] p-6 sm:p-8 flex flex-col justify-between">
+                <div>
+                    <!-- Luxury Tab Selector -->
+                    <div class="grid grid-cols-3 gap-2 p-1.5 rounded-2xl bg-obsidian/80 border border-gold/20 mb-6" role="tablist">
+                        <button type="button" onclick="switchGalaTab('dugun')" id="gtab-dugun" data-i18n="tabWedding" class="gtab-btn py-2.5 px-2 rounded-xl text-xs font-bold bg-gold-metallic text-obsidian shadow-sm transition-all">
+                            Gala Düğün
+                        </button>
+                        <button type="button" onclick="switchGalaTab('kina')" id="gtab-kina" data-i18n="tabHenna" class="gtab-btn py-2.5 px-2 rounded-xl text-xs font-bold text-slate-300 hover:text-white transition-all">
+                            Nişan & Kına
+                        </button>
+                        <button type="button" onclick="switchGalaTab('sunnet')" id="gtab-sunnet" data-i18n="tabPrivate" class="gtab-btn py-2.5 px-2 rounded-xl text-xs font-bold text-slate-300 hover:text-white transition-all">
+                            Sünnet & Özel
+                        </button>
+                    </div>
+
+                    <!-- Tab 1: Gala Düğün -->
+                    <div id="gpanel-dugun" class="gpanel space-y-4">
+                        <div class="flex items-center justify-between gap-2">
+                            <h3 data-i18n="p1Title" class="font-editorial text-2xl sm:text-3xl font-bold text-gold-light">Royal Gala Düğün Paketi</h3>
+                            <span data-i18n="p1Badge" class="px-3 py-1 rounded-full bg-gold/15 border border-gold/30 text-gold text-[11px] font-bold">En Çok Tercih Edilen</span>
+                        </div>
+                        <p data-i18n="p1Desc" class="text-xs sm:text-sm text-slate-300/90 leading-relaxed">
+                            Kırmızı halı seremonisinden orkestra performansına, şamdanlı masa tasarımından HD sinematik çekime kadar eksiksiz balo salonu deneyimi.
+                        </p>
+                        <ul class="space-y-3 text-xs sm:text-sm text-slate-200 pt-2">
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-gold/20 text-gold flex items-center justify-center text-xs shrink-0">✓</span>
+                                <span data-i18n="p1Item1">Gold şamdanlar, supla ve çiçek aranjmanlı masa dekorasyonu</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-gold/20 text-gold flex items-center justify-center text-xs shrink-0">✓</span>
+                                <span data-i18n="p1Item2">Volkan, konfeti ve sis şovu eşliğinde görkemli ilk dans</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-gold/20 text-gold flex items-center justify-center text-xs shrink-0">✓</span>
+                                <span data-i18n="p1Item3">Canlı orkestra, piyanist ve profesyonel DJ performansı</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-gold/20 text-gold flex items-center justify-center text-xs shrink-0">✓</span>
+                                <span data-i18n="p1Item4">Jimmy Jib kamera sistemi, HD video ve albüm çekimi</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-gold/20 text-gold flex items-center justify-center text-xs shrink-0">✓</span>
+                                <span data-i18n="p1Item5">Özel düğün pastası, kuru pasta & meşrubat veya yemekli menü</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tab 2: Nişan & Kına -->
+                    <div id="gpanel-kina" class="gpanel hidden space-y-4">
+                        <div class="flex items-center justify-between gap-2">
+                            <h3 data-i18n="p2Title" class="font-editorial text-2xl sm:text-3xl font-bold text-gold-light">Saray Konsept Nişan & Kına</h3>
+                            <span data-i18n="p2Badge" class="px-3 py-1 rounded-full bg-gold/15 border border-gold/30 text-gold text-[11px] font-bold">Özel Koreografi</span>
+                        </div>
+                        <p data-i18n="p2Desc" class="text-xs sm:text-sm text-slate-300/90 leading-relaxed">
+                            Osmanlı veya modern VIP kına tahtı, profesyonel nedime ekibi ve konsept nişan arka planlarıyla unutulmaz kutlama gecesi.
+                        </p>
+                        <ul class="space-y-3 text-xs sm:text-sm text-slate-200 pt-2">
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-gold/20 text-gold flex items-center justify-center text-xs shrink-0">✓</span>
+                                <span data-i18n="p2Item1">Özel tasarım kına tahtı, cibinlik ve minder dekorasyonu</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-gold/20 text-gold flex items-center justify-center text-xs shrink-0">✓</span>
+                                <span data-i18n="p2Item2">Dansçı nedime ekibi, davul şov ve gelin kaftanı</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-gold/20 text-gold flex items-center justify-center text-xs shrink-0">✓</span>
+                                <span data-i18n="p2Item3">Kişiye özel isimli karşılama panosu ve nişan tagı</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-gold/20 text-gold flex items-center justify-center text-xs shrink-0">✓</span>
+                                <span data-i18n="p2Item4">Yaş/kuru kına, halay mendilleri ve misafir hediyelikleri</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-gold/20 text-gold flex items-center justify-center text-xs shrink-0">✓</span>
+                                <span data-i18n="p2Item5">Sınırsız foto-video kaydı ve bayan DJ seçeneği</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tab 3: Sünnet & Özel Davet -->
+                    <div id="gpanel-sunnet" class="gpanel hidden space-y-4">
+                        <div class="flex items-center justify-between gap-2">
+                            <h3 data-i18n="p3Title" class="font-editorial text-2xl sm:text-3xl font-bold text-gold-light">Şehzade Sünnet & Gala Daveti</h3>
+                            <span data-i18n="p3Badge" class="px-3 py-1 rounded-full bg-gold/15 border border-gold/30 text-gold text-[11px] font-bold">Aile Konsepti</span>
+                        </div>
+                        <p data-i18n="p3Desc" class="text-xs sm:text-sm text-slate-300/90 leading-relaxed">
+                            Şehzade tahtı, yeniçeri/mehter giriş şovu, palyaço ve çocuk animasyonlarıyla hem yetişkinler hem çocuklar için keyifli bir gala.
+                        </p>
+                        <ul class="space-y-3 text-xs sm:text-sm text-slate-200 pt-2">
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-gold/20 text-gold flex items-center justify-center text-xs shrink-0">✓</span>
+                                <span data-i18n="p3Item1">Özel tasarım Şehzade tahtı ve konsept sahne süslemesi</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-gold/20 text-gold flex items-center justify-center text-xs shrink-0">✓</span>
+                                <span data-i18n="p3Item2">Volkan ve ışık şovu eşliğinde görkemli salon girişi</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-gold/20 text-gold flex items-center justify-center text-xs shrink-0">✓</span>
+                                <span data-i18n="p3Item3">Çocuklara özel animatör, yüz boyama ve pamuk şeker ikramı</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-gold/20 text-gold flex items-center justify-center text-xs shrink-0">✓</span>
+                                <span data-i18n="p3Item4">Zengin yemekli ziyafet veya taze ikram menü alternatifleri</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="w-5 h-5 rounded-full bg-gold/20 text-gold flex items-center justify-center text-xs shrink-0">✓</span>
+                                <span data-i18n="p3Item5">Tam gün video, fotoğraf ve sosyal medya klip teslimi</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pt-6 mt-6 border-t border-gold/15">
+                    <button type="button" onclick="applyGalaPackageToConcierge()" class="w-full py-3.5 px-5 rounded-2xl bg-white/5 hover:bg-gold hover:text-obsidian border border-gold/35 text-gold-champagne font-bold text-xs uppercase tracking-[0.16em] transition-all flex items-center justify-center gap-2">
+                        <span data-i18n="pkgSelectBtn">Bu Paketi VIP Concierge'e Aktar</span>
+                        <span>→</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Column: VIP Concierge Interactive Quote Builder -->
+            <div id="vip-concierge" class="lg:col-span-6 vip-glass rounded-[28px] p-6 sm:p-8 flex flex-col justify-between">
+                <div class="space-y-5">
+                    <div class="flex items-center justify-between border-b border-gold/15 pb-4">
+                        <div>
+                            <h3 data-i18n="conciergeTitle" class="font-editorial text-2xl sm:text-3xl font-bold text-white">VIP Concierge Teklif Aracı</h3>
+                            <p data-i18n="conciergeSub" class="text-xs text-slate-400 mt-0.5">Tercihlerinize göre kişiselleştirilmiş WhatsApp davet özeti</p>
+                        </div>
+                        <div class="w-11 h-11 rounded-2xl bg-emerald-500/15 border border-emerald-400/30 text-emerald-400 flex items-center justify-center shrink-0">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- 1. Event Type -->
+                    <div>
+                        <label data-i18n="formStep1" class="block text-[11px] font-bold text-gold-champagne uppercase tracking-[0.18em] mb-2">1. Organizasyon Konsepti</label>
+                        <div class="grid grid-cols-3 gap-2">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="vip_event" value="dugun" checked onchange="updateVipPreview()" class="peer sr-only">
+                                <div data-i18n="radioWedding" class="py-2.5 px-2 text-center rounded-xl border border-white/15 bg-white/5 peer-checked:border-gold peer-checked:bg-gold-metallic peer-checked:text-obsidian text-xs font-bold transition-all">
+                                    Gala Düğün
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="vip_event" value="kina" onchange="updateVipPreview()" class="peer sr-only">
+                                <div data-i18n="radioHenna" class="py-2.5 px-2 text-center rounded-xl border border-white/15 bg-white/5 peer-checked:border-gold peer-checked:bg-gold-metallic peer-checked:text-obsidian text-xs font-bold transition-all">
+                                    Nişan & Kına
+                                </div>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="vip_event" value="sunnet" onchange="updateVipPreview()" class="peer sr-only">
+                                <div data-i18n="radioPrivate" class="py-2.5 px-2 text-center rounded-xl border border-white/15 bg-white/5 peer-checked:border-gold peer-checked:bg-gold-metallic peer-checked:text-obsidian text-xs font-bold transition-all">
+                                    Sünnet & Özel
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- 2. Guest Range Slider -->
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <label for="vip_guest_slider" data-i18n="formStep2" class="text-[11px] font-bold text-gold-champagne uppercase tracking-[0.18em]">2. Davetli Kapasitesi</label>
+                            <span id="vip_guest_display" class="font-display text-base font-bold text-gold-light">550 Kişi</span>
+                        </div>
+                        <input type="range" id="vip_guest_slider" min="150" max="750" step="50" value="550" oninput="updateVipPreview()" class="gold-slider">
+                        <div class="flex justify-between text-[10px] text-slate-400 mt-1.5 font-medium">
+                            <span data-i18n="sliderMin">150 Kişi</span>
+                            <span data-i18n="sliderMid">450 Kişi</span>
+                            <span data-i18n="sliderMax">750 Kişi (Tam Salon)</span>
+                        </div>
+                    </div>
+
+                    <!-- 3. Menu & Season 2-col -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                        <div>
+                            <label for="vip_menu" data-i18n="formStep3" class="block text-[11px] font-bold text-gold-champagne uppercase tracking-[0.18em] mb-1.5">3. İkram Seçeneği</label>
+                            <select id="vip_menu" onchange="updateVipPreview()" class="w-full rounded-xl bg-obsidian border border-gold/25 px-3.5 py-2.5 text-xs sm:text-sm font-semibold text-white focus:outline-none focus:border-gold">
+                                <option value="yemekli" selected>Kraliyet Yemekli Menü</option>
+                                <option value="kokteyl">VIP Kokteyl & Ordövr</option>
+                                <option value="pastali">Yaş & Kuru Pasta İkramı</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="vip_date" data-i18n="formStep4" class="block text-[11px] font-bold text-gold-champagne uppercase tracking-[0.18em] mb-1.5">4. Planlanan Dönem</label>
+                            <input type="text" id="vip_date" value="2027 Bahar / Yaz Sezonu" oninput="updateVipPreview()" placeholder="Örn: Mayıs 2027 / Cumartesi" class="w-full rounded-xl bg-obsidian border border-gold/25 px-3.5 py-2.5 text-xs sm:text-sm font-medium text-white focus:outline-none focus:border-gold">
+                        </div>
+                    </div>
+
+                    <!-- Live Formatted VIP Concierge Preview -->
+                    <div class="rounded-2xl bg-obsidian/75 border border-gold/25 p-4">
+                        <div class="flex items-center justify-between text-[10px] font-bold uppercase tracking-widest text-gold mb-1.5">
+                            <span data-i18n="previewHeader">VIP Talep Özeti (Canlı Önizleme)</span>
+                            <span>0501 218 23 25</span>
+                        </div>
+                        <p id="vip-live-summary" class="text-xs text-slate-300 leading-relaxed">
+                            Merhaba Nirvana Düğün Salonu, <strong class="text-gold-light">Gala Düğün</strong> organizasyonumuz için <strong class="text-gold-light">550 Kişi</strong> katılım ve <strong class="text-gold-light">Kraliyet Yemekli Menü</strong> tercihiyle <strong class="text-gold-light">2027 Bahar / Yaz Sezonu</strong> döneminde müsaitlik ve VIP paket teklifi almak istiyoruz.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="pt-5 mt-5 border-t border-gold/15">
+                    <button type="button" onclick="sendVipWhatsApp()" class="w-full py-4 px-6 rounded-2xl bg-gold-metallic text-obsidian font-bold text-xs sm:text-sm uppercase tracking-[0.15em] shadow-[0_10px_30px_rgba(212,175,55,0.35)] transition-all flex items-center justify-center gap-2.5">
+                        <span data-i18n="sendWhatsappBtn">WhatsApp VIP Teklif İste</span>
+                        <span>→</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 6. Horizontal Luxury Gallery & Verified Guest Reviews -->
+    <section id="galeri" class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-10">
+        <div>
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-5">
+                <div>
+                    <span data-i18n="galEyebrow" class="text-[11px] font-bold uppercase tracking-[0.26em] text-gold">Görsel Seçki</span>
+                    <h2 data-i18n="galHeading" class="font-display text-2xl sm:text-4xl font-bold text-white mt-1">Balo Salonu Atmosferi</h2>
+                </div>
+                <span data-i18n="galHint" class="text-xs text-slate-400">Tam ekran incelemek için görsellere dokunun</span>
+            </div>
+
+            <!-- Horizontal Scrollable Showcase Strip -->
+            <div class="flex gap-4 overflow-x-auto no-scrollbar snap-x snap-mandatory pb-2">
+                <!-- Gallery Card 1 -->
+                <div onclick="openVipLightboxByKey('g1', 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1600&q=90')" class="snap-start shrink-0 w-80 sm:w-96 rounded-3xl overflow-hidden border border-gold/25 bg-obsidian-card cursor-pointer group relative aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=900&q=85"
+                         alt="Kristal Avizeli Ana Balo Salonu"
+                         onerror="this.src='https://placehold.co/900x675/0C1222/D4AF37?text=Ana+Balo+Salonu'"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="gallery-overlay-text absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/20 to-transparent flex items-end p-5">
+                        <div>
+                            <span data-i18n="g1Tag" class="text-[10px] uppercase tracking-[0.22em] text-gold font-bold">Ana Balo Salonu</span>
+                            <h3 data-i18n="g1Title" class="font-editorial text-2xl font-bold text-white leading-tight mt-0.5">Kristal Avizeli Gala Atmosferi</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card 2 -->
+                <div onclick="openVipLightboxByKey('g2', 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1600&q=90')" class="snap-start shrink-0 w-80 sm:w-96 rounded-3xl overflow-hidden border border-gold/25 bg-obsidian-card cursor-pointer group relative aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=85"
+                         alt="Gold Şamdanlı Masa Düzeni"
+                         onerror="this.src='https://placehold.co/900x675/0C1222/D4AF37?text=Ziyafet+Masa+Duzeni'"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="gallery-overlay-text absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/20 to-transparent flex items-end p-5">
+                        <div>
+                            <span data-i18n="g2Tag" class="text-[10px] uppercase tracking-[0.22em] text-gold font-bold">Ziyafet Masa Düzeni</span>
+                            <h3 data-i18n="g2Title" class="font-editorial text-2xl font-bold text-white leading-tight mt-0.5">Gold Şamdanlı Kraliyet Sofrası</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card 3 -->
+                <div onclick="openVipLightboxByKey('g3', 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=90')" class="snap-start shrink-0 w-80 sm:w-96 rounded-3xl overflow-hidden border border-gold/25 bg-obsidian-card cursor-pointer group relative aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=85"
+                         alt="Sahne Işık Atmosferi"
+                         onerror="this.src='https://placehold.co/900x675/0C1222/D4AF37?text=Sahne+Isik+Sovu'"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="gallery-overlay-text absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/20 to-transparent flex items-end p-5">
+                        <div>
+                            <span data-i18n="g3Tag" class="text-[10px] uppercase tracking-[0.22em] text-gold font-bold">Sahne & Işık</span>
+                            <h3 data-i18n="g3Title" class="font-editorial text-2xl font-bold text-white leading-tight mt-0.5">Sinematik Işık & İlk Dans Pisti</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Card 4 -->
+                <div onclick="openVipLightboxByKey('g4', 'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=1600&q=90')" class="snap-start shrink-0 w-80 sm:w-96 rounded-3xl overflow-hidden border border-gold/25 bg-obsidian-card cursor-pointer group relative aspect-[4/3]">
+                    <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=900&q=85"
+                         alt="Nikah ve Nişan Konsepti"
+                         onerror="this.src='https://placehold.co/900x675/0C1222/D4AF37?text=Nikah+Nisan+Konsepti'"
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="gallery-overlay-text absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/20 to-transparent flex items-end p-5">
+                        <div>
+                            <span data-i18n="g4Tag" class="text-[10px] uppercase tracking-[0.22em] text-gold font-bold">Nikah & Nişan</span>
+                            <h3 data-i18n="g4Title" class="font-editorial text-2xl font-bold text-white leading-tight mt-0.5">Özel Tasarım Seremoni Alanı</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3-Card Verified Google Reviews -->
+        <div class="vip-glass rounded-[30px] p-6 sm:p-8">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
+                <div>
+                    <h3 data-i18n="revHeading" class="font-display text-xl sm:text-2xl font-bold text-white">Çiftlerimizin Deneyimleri</h3>
+                    <p data-i18n="revSub" class="text-xs text-slate-400 mt-0.5">Google Haritalar’da 660+ Doğrulanmış Misafir Değerlendirmesi</p>
+                </div>
+                <span data-i18n="revBadge" class="px-3.5 py-1.5 rounded-full bg-gold/15 border border-gold/30 text-gold-light text-xs font-bold self-start sm:self-auto">
+                    ★ 4.6 / 5.0 Yüksek Memnuniyet
+                </span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="rounded-2xl bg-obsidian/70 border border-gold/15 p-5 flex flex-col justify-between">
+                    <p data-i18n="rev1Text" class="text-xs sm:text-sm text-slate-300 leading-relaxed italic">
+                        “Salonun yüksek tavanı, kristal avizeleri ve kolonsuz yapısı sayesinde 600 kişilik düğünümüzde bile inanılmaz ferah bir ortam vardı. Orkestra ve ışık şovu muhteşemdi.”
+                    </p>
+                    <div class="pt-3 mt-4 border-t border-white/10 flex items-center justify-between">
+                        <span class="font-bold text-xs text-white">Büşra & Emre T.</span>
+                        <span class="text-gold text-xs tracking-widest">★★★★★</span>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl bg-obsidian/70 border border-gold/15 p-5 flex flex-col justify-between">
+                    <p data-i18n="rev2Text" class="text-xs sm:text-sm text-slate-300 leading-relaxed italic">
+                        “Temmuz ayında Antalya sıcağında düğün yaptık ama salonun kliması o kadar güçlüydü ki misafirlerimiz çok rahat etti. Servis hızı ve çalışanların ilgisi kusursuzdu.”
+                    </p>
+                    <div class="pt-3 mt-4 border-t border-white/10 flex items-center justify-between">
+                        <span class="font-bold text-xs text-white">Merve & Hakan A.</span>
+                        <span class="text-gold text-xs tracking-widest">★★★★★</span>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl bg-obsidian/70 border border-gold/15 p-5 flex flex-col justify-between">
+                    <p data-i18n="rev3Text" class="text-xs sm:text-sm text-slate-300 leading-relaxed italic">
+                        “Kına ve düğün organizasyonumuz için tercih ettik. Gelin odasının konforu, ses sisteminin kalitesi ve giriş koreografisi hayalimizden bile güzeldi.”
+                    </p>
+                    <div class="pt-3 mt-4 border-t border-white/10 flex items-center justify-between">
+                        <span class="font-bold text-xs text-white">Zeynep Karaca</span>
+                        <span class="text-gold text-xs tracking-widest">★★★★★</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fullscreen VIP Lightbox Modal -->
+    <div id="vip-lightbox" class="hidden fixed inset-0 z-50 bg-obsidian/95 backdrop-blur-xl flex items-center justify-center p-4" onclick="closeVipLightbox()">
+        <div class="relative max-w-4xl w-full rounded-3xl overflow-hidden border border-gold/40 bg-obsidian-card shadow-2xl" onclick="event.stopPropagation()">
+            <button type="button" onclick="closeVipLightbox()" class="absolute top-3.5 right-3.5 z-10 w-10 h-10 rounded-full bg-obsidian/80 border border-gold/40 text-gold hover:bg-gold hover:text-obsidian flex items-center justify-center font-bold transition-colors" aria-label="Kapat">
+                ✕
+            </button>
+            <img id="vip-lightbox-img" src="" alt="Nirvana Düğün Salonu Büyük Görsel" class="w-full max-h-[76vh] object-cover">
+            <div class="p-4 sm:p-5 flex items-center justify-between bg-obsidian-surface border-t border-gold/20">
+                <p id="vip-lightbox-caption" class="font-editorial text-xl sm:text-2xl font-bold text-gold-light"></p>
+                <span class="text-[11px] uppercase tracking-widest text-gold font-semibold">Nirvana Palace</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7. Compact Royal Footer -->
+    <footer class="relative z-10 border-t border-gold/20 bg-obsidian-surface/90 mt-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 pb-8 border-b border-white/10">
+                <div class="space-y-2">
+                    <span class="font-display text-2xl font-bold tracking-[0.16em] text-gold-metallic block">NIRVANA DÜĞÜN SALONU</span>
+                    <p data-i18n="footerAddr" class="text-xs sm:text-sm text-slate-400">
+                        Habibler Mah., Sütçüler Cad. No: 363, Kepez / Antalya
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-3">
+                    <a href="https://maps.google.com/?q=Nirvana+D%C3%BC%C4%9F%C3%BCn+Salonu+Habibler+Kepez+Antalya" target="_blank" rel="noopener noreferrer" data-i18n="footerMapBtn" class="px-5 py-3 rounded-xl bg-gold-metallic text-obsidian font-bold text-xs uppercase tracking-wider transition-all">
+                        Google Haritalar Yol Tarifi
+                    </a>
+                    <a href="tel:+905012182325" class="px-5 py-3 rounded-xl bg-white/5 hover:bg-white/10 border border-gold/30 text-gold-champagne font-bold text-xs uppercase tracking-wider transition-all">
+                        0501 218 23 25
+                    </a>
+                </div>
+            </div>
+
+            <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-2">
+                <p data-i18n="footerCopyLeft">© 2026 Nirvana Düğün & Balo Salonu • Kepez, Antalya</p>
+                <p data-i18n="footerCopyRight">VIP Gala, Düğün, Nişan & Özel Davet Organizasyonları</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile Bottom VIP Concierge Bar -->
+    <div class="fixed bottom-0 inset-x-0 z-40 md:hidden bg-obsidian/95 backdrop-blur-xl border-t border-gold/30 px-3 py-2.5 flex items-center gap-2.5">
+        <a href="tel:+905012182325" data-i18n="mobileCallBtn" class="flex-1 py-3 px-3 rounded-xl bg-white/5 border border-gold/30 text-gold-champagne font-bold text-xs uppercase tracking-wider text-center">
+            Hemen Ara
+        </a>
+        <a href="#vip-concierge" data-i18n="mobileQuoteBtn" class="flex-1 py-3 px-3 rounded-xl bg-gold-metallic text-obsidian font-bold text-xs uppercase tracking-wider text-center shadow-[0_0_20px_rgba(212,175,55,0.35)]">
+            VIP Teklif Al
+        </a>
+    </div>
+
+    <!-- Vanilla JavaScript Engine (Theme Switcher + Bilingual TR / EN + Interactive Simulator + WhatsApp Concierge) -->
+    <script>
+        let currentTheme = 'dark';
+        let currentLang = 'tr';
+        let currentFloorplanMode = '550';
+        let currentFloorplanGuests = 550;
+        let currentGalaTabKey = 'dugun';
+
+        // Luxury Dark (Obsidian) / Light (Ivory & Champagne) Theme Switcher
+        function toggleTheme() {
+            const isLight = document.documentElement.classList.toggle('light-theme');
+            currentTheme = isLight ? 'light' : 'dark';
+
+            const sunIcon = document.getElementById('icon-sun');
+            const moonIcon = document.getElementById('icon-moon');
+            if (isLight) {
+                sunIcon.classList.add('hidden');
+                moonIcon.classList.remove('hidden');
+            } else {
+                moonIcon.classList.add('hidden');
+                sunIcon.classList.remove('hidden');
+            }
+
+            syncSvgThemeColors(isLight);
+            setFloorplanMode(currentFloorplanMode);
+        }
+
+        function syncSvgThemeColors(isLight) {
+            const svgEl = document.getElementById('ballroom-svg');
+            if (!svgEl) return;
+
+            svgEl.style.backgroundColor = isLight ? '#F5EFE2' : '#070B16';
+
+            const outerWall = document.getElementById('svg-outer-wall');
+            const stageShape = document.getElementById('svg-stage-shape');
+            const aisleRect = document.getElementById('svg-aisle-rect');
+            const pistCircle = document.getElementById('svg-pist-circle');
+            const entranceBox = document.getElementById('svg-entrance-box');
+            const stageText = document.getElementById('svg-stage-label');
+            const pistTop = document.getElementById('svg-pist-top');
+            const pistBot = document.getElementById('svg-pist-bot');
+            const aisleText = document.getElementById('svg-aisle-label');
+
+            const strokeBronze = isLight ? '#8A6518' : '#D4AF37';
+            if (outerWall) {
+                outerWall.setAttribute('stroke', strokeBronze);
+                outerWall.setAttribute('stroke-opacity', isLight ? '0.55' : '0.35');
+            }
+            if (stageShape) {
+                stageShape.setAttribute('fill', strokeBronze);
+                stageShape.setAttribute('fill-opacity', isLight ? '0.16' : '0.2');
+                stageShape.setAttribute('stroke', strokeBronze);
+            }
+            if (aisleRect) {
+                aisleRect.setAttribute('fill', strokeBronze);
+                aisleRect.setAttribute('fill-opacity', isLight ? '0.1' : '0.08');
+                aisleRect.setAttribute('stroke', strokeBronze);
+                aisleRect.setAttribute('stroke-opacity', isLight ? '0.45' : '0.25');
+            }
+            if (pistCircle) {
+                pistCircle.setAttribute('stroke', strokeBronze);
+            }
+            if (entranceBox) {
+                entranceBox.setAttribute('fill', strokeBronze);
+                entranceBox.setAttribute('fill-opacity', isLight ? '0.2' : '0.25');
+                entranceBox.setAttribute('stroke', strokeBronze);
+            }
+
+            if (stageText) stageText.setAttribute('fill', isLight ? '#5C3F08' : '#F3E5AB');
+            if (pistTop) pistTop.setAttribute('fill', isLight ? '#5C3F08' : '#F3E5AB');
+            if (pistBot) pistBot.setAttribute('fill', isLight ? '#8A6518' : '#D4AF37');
+            if (aisleText) aisleText.setAttribute('fill', isLight ? '#18181B' : '#F8FAFC');
+        }
+
+        // Complete Turkish & English Dictionary
+        const i18n = {
+            tr: {
+                pageTitle: "Nirvana Düğün Salonu | VIP Gala, Balo & Özel Davet Sarayı — Antalya",
+                brandSubtitle: "Düğün & Balo Sarayı",
+                navSimulator: "Oturma Planı",
+                navPrivileges: "VIP Ayrıcalıklar",
+                navPackages: "Gala Paketleri",
+                navGallery: "Galeri",
+                headerVipBtn: "VIP Randevu",
+                heroBadge: "Kepez Habibler • Antalya’nın İkonik Balo Salonu",
+                heroTitleLine1: "Masalsı Gecenize",
+                heroTitleLine2: "Kraliyet İhtişamı",
+                heroDesc: "660’ı aşkın mutlu çiftin tercihi Nirvana Düğün Salonu’nda; kolonsuz 750 kişilik panoramik mimari, kristal avize şıklığı, dört mevsim merkezi iklimlendirme ve kişiye özel VIP gala yönetimiyle kusursuz anlar tasarlıyoruz.",
+                heroCtaPrimary: "VIP Tarih & Fiyat Al",
+                heroCtaSecondary: "Salon Planını İncele",
+                stat1Label: "Kolonsuz Kapasite",
+                stat2Label: "Mutlu Çift Yorumu",
+                stat3Label: "İklimlendirme & Vale",
+                heroAvailPill: "2026 – 2027 Rezervasyonları Açık",
+                heroPlaqueTitle: "Kırmızı Halı & Kristal Avize Konsepti",
+                heroPlaqueSub: "Kesintisiz Görüş Açılı Sahne • VIP Gelin Süiti • Özel Otopark",
+                simEyebrow: "İnteraktif Salon Planlayıcı",
+                simHeading: "Mimari Oturma & Sahne Simülatörü",
+                simSub: "Davetli sayınıza göre kolonsuz salonumuzun yuvarlak ziyafet masa yerleşimini, dans pisti genişliğini ve servis ekibi planlamasını canlı inceleyin.",
+                simSelectLabel: "Kapasite Konfigürasyonu Seçin",
+                simBtn350Top: "350 Kişi",
+                simBtn350Sub: "Samimi Gala",
+                simBtn550Top: "550 Kişi",
+                simBtn550Sub: "Klasik Balo",
+                simBtn750Top: "750 Kişi",
+                simBtn750Sub: "Görkemli Düğün",
+                simMetricTablesLabel: "Ziyafet Masası",
+                simMetricTablesSub: "10’ar Kişilik Yuvarlak",
+                simMetricPistLabel: "Dans Pisti Alanı",
+                simMetricPistSub: "Merkezi Kristal Pist",
+                simMetricStaffLabel: "VIP Servis Ekibi",
+                simMetricStaffSub: "Şef Garson & Hostes",
+                simMetricViewLabel: "Sahne Görüş Açısı",
+                simMetricViewSub: "Tam Kolonsuz Mimari",
+                simSyncBtn: "Bu Kapasiteyi Teklif Formuna Aktar",
+                svgTopLeft: "Kuşbakışı Salon Yerleşim Planı",
+                svgStage: "ANA SAHNE & NİKAH KÜRSÜSÜ",
+                svgPistTop: "KRİSTAL",
+                svgPistBot: "DANS PİSTİ",
+                svgAisle: "VIP GELİN YOLU GİRİŞİ",
+                bentoEyebrow: "Kusursuz Konfor",
+                bentoHeading: "Nirvana VIP Ayrıcalıkları",
+                bentoSub: "Her mevsim aynı ihtişam ve eksiksiz teknik altyapı",
+                bento1Badge: "Yüksek Tavan & Kolonsuz",
+                bento1Title: "750 Kişilik Kolonsuz Balo Mimarisi",
+                bento1Desc: "Salonun hiçbir noktasında görüşü engelleyen kolon bulunmaz. Özel tasarım kristal avizeler ve yüksek tavan ferahlığı ile en kalabalık davetlerde bile saray atmosferi sunar.",
+                bento2Badge: "Özel Asistan & Kasa",
+                bento2Title: "VIP Gelin & Damat Hazırlık Süiti",
+                bento2Desc: "Bağımsız iklimlendirmeli, özel lavabolu, şifreli emanet kasalı ve doğrudan sahne arkasına bağlanan lüks gelin-damat dinlenme odası.",
+                bento3Title: "4 Mevsim İklimlendirme",
+                bento3Desc: "Antalya sıcağında dahi ferahlık sağlayan yüksek kapasiteli merkezi klima ve taze hava sistemi.",
+                bento4Title: "Kesintisiz Güç & Akustik",
+                bento4Desc: "Tam otomatik jeneratör, robotik sahne ışıkları ve kristal netliğinde konser akustiği.",
+                bento5Badge: "Engelsiz Erişim",
+                bento5Title: "Geniş Otopark & Karşılama Protokolü",
+                bento5Desc: "Kepez Habibler’de ulaşımı kolay konum, davetlileriniz için geniş ücretsiz otopark ve girişte lokum/kolonya ikramlı hostes karşılaması.",
+                pkgSectionEyebrow: "Kişiselleştirilmiş Organizasyon",
+                pkgSectionHeading: "Gala Paketleri & VIP Concierge",
+                tabWedding: "Gala Düğün",
+                tabHenna: "Nişan & Kına",
+                tabPrivate: "Sünnet & Özel",
+                p1Title: "Royal Gala Düğün Paketi",
+                p1Badge: "En Çok Tercih Edilen",
+                p1Desc: "Kırmızı halı seremonisinden orkestra performansına, şamdanlı masa tasarımından HD sinematik çekime kadar eksiksiz balo salonu deneyimi.",
+                p1Item1: "Gold şamdanlar, supla ve çiçek aranjmanlı masa dekorasyonu",
+                p1Item2: "Volkan, konfeti ve sis şovu eşliğinde görkemli ilk dans",
+                p1Item3: "Canlı orkestra, piyanist ve profesyonel DJ performansı",
+                p1Item4: "Jimmy Jib kamera sistemi, HD video ve albüm çekimi",
+                p1Item5: "Özel düğün pastası, kuru pasta & meşrubat veya yemekli menü",
+                p2Title: "Saray Konsept Nişan & Kına",
+                p2Badge: "Özel Koreografi",
+                p2Desc: "Osmanlı veya modern VIP kına tahtı, profesyonel nedime ekibi ve konsept nişan arka planlarıyla unutulmaz kutlama gecesi.",
+                p2Item1: "Özel tasarım kına tahtı, cibinlik ve minder dekorasyonu",
+                p2Item2: "Dansçı nedime ekibi, davul şov ve gelin kaftanı",
+                p2Item3: "Kişiye özel isimli karşılama panosu ve nişan tagı",
+                p2Item4: "Yaş/kuru kına, halay mendilleri ve misafir hediyelikleri",
+                p2Item5: "Sınırsız foto-video kaydı ve bayan DJ seçeneği",
+                p3Title: "Şehzade Sünnet & Gala Daveti",
+                p3Badge: "Aile Konsepti",
+                p3Desc: "Şehzade tahtı, yeniçeri/mehter giriş şovu, palyaço ve çocuk animasyonlarıyla hem yetişkinler hem çocuklar için keyifli bir gala.",
+                p3Item1: "Özel tasarım Şehzade tahtı ve konsept sahne süslemesi",
+                p3Item2: "Volkan ve ışık şovu eşliğinde görkemli salon girişi",
+                p3Item3: "Çocuklara özel animatör, yüz boyama ve pamuk şeker ikramı",
+                p3Item4: "Zengin yemekli ziyafet veya taze ikram menü alternatifleri",
+                p3Item5: "Tam gün video, fotoğraf ve sosyal medya klip teslimi",
+                pkgSelectBtn: "Bu Paketi VIP Concierge'e Aktar",
+                conciergeTitle: "VIP Concierge Teklif Aracı",
+                conciergeSub: "Tercihlerinize göre kişiselleştirilmiş WhatsApp davet özeti",
+                formStep1: "1. Organizasyon Konsepti",
+                radioWedding: "Gala Düğün",
+                radioHenna: "Nişan & Kına",
+                radioPrivate: "Sünnet & Özel",
+                formStep2: "2. Davetli Kapasitesi",
+                sliderMin: "150 Kişi",
+                sliderMid: "450 Kişi",
+                sliderMax: "750 Kişi (Tam Salon)",
+                formStep3: "3. İkram Seçeneği",
+                formStep4: "4. Planlanan Dönem",
+                datePlaceholder: "Örn: Mayıs 2027 / Cumartesi",
+                defaultSeasonValue: "2027 Bahar / Yaz Sezonu",
+                previewHeader: "VIP Talep Özeti (Canlı Önizleme)",
+                sendWhatsappBtn: "WhatsApp VIP Teklif İste",
+                galEyebrow: "Görsel Seçki",
+                galHeading: "Balo Salonu Atmosferi",
+                galHint: "Tam ekran incelemek için görsellere dokunun",
+                g1Tag: "Ana Balo Salonu",
+                g1Title: "Kristal Avizeli Gala Atmosferi",
+                g2Tag: "Ziyafet Masa Düzeni",
+                g2Title: "Gold Şamdanlı Kraliyet Sofrası",
+                g3Tag: "Sahne & Işık",
+                g3Title: "Sinematik Işık & İlk Dans Pisti",
+                g4Tag: "Nikah & Nişan",
+                g4Title: "Özel Tasarım Seremoni Alanı",
+                revHeading: "Çiftlerimizin Deneyimleri",
+                revSub: "Google Haritalar’da 660+ Doğrulanmış Misafir Değerlendirmesi",
+                revBadge: "★ 4.6 / 5.0 Yüksek Memnuniyet",
+                rev1Text: "“Salonun yüksek tavanı, kristal avizeleri ve kolonsuz yapısı sayesinde 600 kişilik düğünümüzde bile inanılmaz ferah bir ortam vardı. Orkestra ve ışık şovu muhteşemdi.”",
+                rev2Text: "“Temmuz ayında Antalya sıcağında düğün yaptık ama salonun kliması o kadar güçlüydü ki misafirlerimiz çok rahat etti. Servis hızı ve çalışanların ilgisi kusursuzdu.”",
+                rev3Text: "“Kına ve düğün organizasyonumuz için tercih ettik. Gelin odasının konforu, ses sisteminin kalitesi ve giriş koreografisi hayalimizden bile güzeldi.”",
+                footerAddr: "Habibler Mah., Sütçüler Cad. No: 363, Kepez / Antalya",
+                footerMapBtn: "Google Haritalar Yol Tarifi",
+                footerCopyLeft: "© 2026 Nirvana Düğün & Balo Salonu • Kepez, Antalya",
+                footerCopyRight: "VIP Gala, Düğün, Nişan & Özel Davet Organizasyonları",
+                mobileCallBtn: "Hemen Ara",
+                mobileQuoteBtn: "VIP Teklif Al",
+                guestUnit: "Kişi",
+                menuOptions: {
+                    yemekli: "Kraliyet Yemekli Menü",
+                    kokteyl: "VIP Kokteyl & Ordövr",
+                    pastali: "Yaş & Kuru Pasta İkramı"
+                },
+                eventLabels: {
+                    dugun: "Gala Düğün",
+                    kina: "Nişan & Kına",
+                    sunnet: "Sünnet & Özel Davet"
+                },
+                floorplanModes: {
+                    '350': { tables: '35 Masa', pist: '165 m²', staff: '20 Personel', badge: '350 Kişilik Samimi Gala Düzeni' },
+                    '550': { tables: '55 Masa', pist: '140 m²', staff: '28 Personel', badge: '550 Kişilik Klasik Balo Düzeni' },
+                    '750': { tables: '75 Masa', pist: '115 m²', staff: '36 Personel', badge: '750 Kişilik Görkemli Düğün Düzeni' }
+                }
+            },
+            en: {
+                pageTitle: "Nirvana Wedding Palace | VIP Gala & Royal Ballroom — Antalya",
+                brandSubtitle: "Wedding & Gala Palace",
+                navSimulator: "Floorplan",
+                navPrivileges: "VIP Privileges",
+                navPackages: "Gala Packages",
+                navGallery: "Gallery",
+                headerVipBtn: "VIP Booking",
+                heroBadge: "Kepez Habibler • Antalya’s Iconic Royal Ballroom",
+                heroTitleLine1: "Royal Grandeur for",
+                heroTitleLine2: "Your Fairy-Tale Night",
+                heroDesc: "Trusted by over 660 happy couples, Nirvana Wedding Palace offers a 750-guest pillar-free panoramic ballroom, crystal chandelier elegance, four-season central climate control, and bespoke VIP gala management.",
+                heroCtaPrimary: "Get VIP Date & Quote",
+                heroCtaSecondary: "Explore Floorplan",
+                stat1Label: "Pillar-Free Capacity",
+                stat2Label: "Happy Couple Reviews",
+                stat3Label: "Climate Control & Valet",
+                heroAvailPill: "2026 – 2027 Bookings Open",
+                heroPlaqueTitle: "Red Carpet & Crystal Chandelier Concept",
+                heroPlaqueSub: "Unobstructed Stage View • VIP Bridal Suite • Private Parking",
+                simEyebrow: "Interactive Ballroom Planner",
+                simHeading: "Architectural Seating & Stage Simulator",
+                simSub: "Preview our pillar-free round banquet table layout, crystal dance floor dimensions, and dedicated service crew tailored to your guest count.",
+                simSelectLabel: "Select Capacity Configuration",
+                simBtn350Top: "350 Guests",
+                simBtn350Sub: "Intimate Gala",
+                simBtn550Top: "550 Guests",
+                simBtn550Sub: "Classic Ball",
+                simBtn750Top: "750 Guests",
+                simBtn750Sub: "Grand Wedding",
+                simMetricTablesLabel: "Banquet Tables",
+                simMetricTablesSub: "10-Seat Round Tables",
+                simMetricPistLabel: "Dance Floor Area",
+                simMetricPistSub: "Central Crystal Floor",
+                simMetricStaffLabel: "VIP Service Crew",
+                simMetricStaffSub: "Head Waiters & Hostesses",
+                simMetricViewLabel: "Stage Visibility",
+                simMetricViewSub: "100% Pillar-Free Design",
+                simSyncBtn: "Apply Capacity to Quote Builder",
+                svgTopLeft: "Overhead Ballroom Seating Blueprint",
+                svgStage: "MAIN STAGE & CEREMONY PODIUM",
+                svgPistTop: "CRYSTAL",
+                svgPistBot: "DANCE FLOOR",
+                svgAisle: "VIP BRIDAL AISLE ENTRANCE",
+                bentoEyebrow: "Unrivaled Comfort",
+                bentoHeading: "Nirvana VIP Privileges",
+                bentoSub: "Timeless grandeur and seamless technical infrastructure all year round",
+                bento1Badge: "High Ceiling & Pillar-Free",
+                bento1Title: "750-Guest Pillar-Free Ballroom Architecture",
+                bento1Desc: "Zero columns obstructing the stage from any angle. Custom crystal chandeliers and soaring ceilings create a true palace atmosphere even at full capacity.",
+                bento2Badge: "Private Assistant & Safe",
+                bento2Title: "VIP Bride & Groom Preparation Suite",
+                bento2Desc: "Independently air-conditioned luxury dressing suite featuring a private restroom, digital security safe, and direct backstage access.",
+                bento3Title: "4-Season Climate Control",
+                bento3Desc: "High-capacity central air conditioning and fresh-air circulation ensuring crisp comfort even in mid-summer Antalya.",
+                bento4Title: "Uninterrupted Power & Acoustics",
+                bento4Desc: "Automatic backup generator, robotic stage lighting, and concert-grade acoustic clarity.",
+                bento5Badge: "Step-Free Accessibility",
+                bento5Title: "Spacious Parking & Welcome Protocol",
+                bento5Desc: "Convenient Kepez Habibler location with complimentary guest parking and traditional Turkish delight & rosewater hostess reception.",
+                pkgSectionEyebrow: "Tailored Celebrations",
+                pkgSectionHeading: "Gala Packages & VIP Concierge",
+                tabWedding: "Gala Wedding",
+                tabHenna: "Engagement & Henna",
+                tabPrivate: "Private & Family Gala",
+                p1Title: "Royal Gala Wedding Package",
+                p1Badge: "Most Popular",
+                p1Desc: "A complete royal ballroom experience from red-carpet entrance and live orchestra to gold candelabra table styling and HD cinematic filming.",
+                p1Item1: "Gold candelabras, charger plates & floral table centerpieces",
+                p1Item2: "Grand first dance with cold spark fountains, confetti & fog",
+                p1Item3: "Live orchestra, pianist & professional DJ performance",
+                p1Item4: "Jimmy Jib crane camera, HD video & luxury photo album",
+                p1Item5: "Custom multi-tier wedding cake, pastries or full banquet dinner",
+                p2Title: "Palace Concept Engagement & Henna",
+                p2Badge: "Custom Choreography",
+                p2Desc: "Ottoman or modern VIP henna throne, professional bridesmaid dance troupe, and bespoke engagement backdrops for an unforgettable night.",
+                p2Item1: "Custom-designed henna throne, canopy & luxury floor cushions",
+                p2Item2: "Choreographed dance troupe, drum show & bridal kaftan",
+                p2Item3: "Personalized monogram welcome board & engagement arch",
+                p2Item4: "Traditional henna ceremony kit, dance kerchiefs & guest favors",
+                p2Item5: "Full photo-video coverage & female DJ option upon request",
+                p3Title: "Royal Family Celebration & Gala",
+                p3Badge: "Family Concept",
+                p3Desc: "Ceremonial throne, grand entrance show, and dedicated children’s entertainment for joyful family milestones and private banquets.",
+                p3Item1: "Custom ceremonial throne & themed stage floral styling",
+                p3Item2: "Grand ballroom entrance with spark fountains & spotlighting",
+                p3Item3: "Dedicated kids' entertainers, face painting & sweet treats",
+                p3Item4: "Gourmet banquet dinner or freshly baked pastry refreshments",
+                p3Item5: "Full-event HD video, photography & social media highlight reel",
+                pkgSelectBtn: "Transfer Package to VIP Concierge",
+                conciergeTitle: "VIP Concierge Quote Builder",
+                conciergeSub: "Instant personalized WhatsApp invitation brief based on your choices",
+                formStep1: "1. Celebration Concept",
+                radioWedding: "Gala Wedding",
+                radioHenna: "Engagement & Henna",
+                radioPrivate: "Private Gala",
+                formStep2: "2. Estimated Guest Count",
+                sliderMin: "150 Guests",
+                sliderMid: "450 Guests",
+                sliderMax: "750 Guests (Full Hall)",
+                formStep3: "3. Catering Preference",
+                formStep4: "4. Preferred Season / Date",
+                datePlaceholder: "e.g., May 2027 / Saturday",
+                defaultSeasonValue: "Spring / Summer 2027 Season",
+                previewHeader: "VIP Inquiry Brief (Live Preview)",
+                sendWhatsappBtn: "Request VIP Quote via WhatsApp",
+                galEyebrow: "Visual Showcase",
+                galHeading: "Ballroom Atmosphere",
+                galHint: "Tap any photo to inspect in full screen",
+                g1Tag: "Grand Ballroom",
+                g1Title: "Crystal Chandelier Gala Atmosphere",
+                g2Tag: "Banquet Styling",
+                g2Title: "Gold Candelabra Royal Table Setting",
+                g3Tag: "Stage & Lighting",
+                g3Title: "Cinematic Lighting & First Dance Floor",
+                g4Tag: "Ceremony & Engagement",
+                g4Title: "Bespoke Ceremony Stage Design",
+                revHeading: "Couples’ Experiences",
+                revSub: "660+ Verified Guest Reviews on Google Maps",
+                revBadge: "★ 4.6 / 5.0 High Satisfaction",
+                rev1Text: "“Thanks to the soaring ceilings, crystal chandeliers, and pillar-free design, even our 600-guest wedding felt remarkably spacious. The orchestra and lighting were spectacular.”",
+                rev2Text: "“We hosted our wedding in July during peak Antalya heat, yet the ballroom climate control kept all our guests completely comfortable. Service speed was flawless.”",
+                rev3Text: "“We chose Nirvana for both our henna night and wedding. The bridal suite comfort, sound clarity, and entrance choreography exceeded every dream we had.”",
+                footerAddr: "Habibler Dist., Sütçüler Ave. No: 363, Kepez / Antalya, Türkiye",
+                footerMapBtn: "Google Maps Directions",
+                footerCopyLeft: "© 2026 Nirvana Wedding & Ballroom Palace • Kepez, Antalya",
+                footerCopyRight: "VIP Galas, Weddings, Engagements & Private Banquets",
+                mobileCallBtn: "Call Now",
+                mobileQuoteBtn: "Get VIP Quote",
+                guestUnit: "Guests",
+                menuOptions: {
+                    yemekli: "Royal Banquet Dinner Menu",
+                    kokteyl: "VIP Cocktail & Hors d'Oeuvres",
+                    pastali: "Artisan Cake & Pastry Reception"
+                },
+                eventLabels: {
+                    dugun: "Gala Wedding",
+                    kina: "Engagement & Henna",
+                    sunnet: "Private Family Gala"
+                },
+                floorplanModes: {
+                    '350': { tables: '35 Tables', pist: '165 m²', staff: '20 Crew', badge: '350-Guest Intimate Gala Layout' },
+                    '550': { tables: '55 Tables', pist: '140 m²', staff: '28 Crew', badge: '550-Guest Classic Ball Layout' },
+                    '750': { tables: '75 Tables', pist: '115 m²', staff: '36 Crew', badge: '750-Guest Grand Wedding Layout' }
+                }
+            }
+        };
+
+        // Switch Language Between TR & EN
+        function setLanguage(lang) {
+            currentLang = lang;
+            const dict = i18n[lang];
+            document.documentElement.lang = lang;
+            document.title = dict.pageTitle;
+
+            const trBtn = document.getElementById('lang-btn-tr');
+            const enBtn = document.getElementById('lang-btn-en');
+            if (lang === 'tr') {
+                trBtn.className = 'px-2 sm:px-2.5 py-1.5 rounded-lg text-[11px] font-bold tracking-wider bg-gold-metallic text-obsidian transition-all';
+                enBtn.className = 'px-2 sm:px-2.5 py-1.5 rounded-lg text-[11px] font-bold tracking-wider text-slate-300 hover:text-white transition-all';
+            } else {
+                enBtn.className = 'px-2 sm:px-2.5 py-1.5 rounded-lg text-[11px] font-bold tracking-wider bg-gold-metallic text-obsidian transition-all';
+                trBtn.className = 'px-2 sm:px-2.5 py-1.5 rounded-lg text-[11px] font-bold tracking-wider text-slate-300 hover:text-white transition-all';
+            }
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (dict[key]) {
+                    el.textContent = dict[key];
+                }
+            });
+
+            document.getElementById('svg-stage-label').textContent = dict.svgStage;
+            document.getElementById('svg-pist-top').textContent = dict.svgPistTop;
+            document.getElementById('svg-pist-bot').textContent = dict.svgPistBot;
+            document.getElementById('svg-aisle-label').textContent = dict.svgAisle;
+
+            const menuSelect = document.getElementById('vip_menu');
+            Array.from(menuSelect.options).forEach(opt => {
+                if (dict.menuOptions[opt.value]) {
+                    opt.textContent = dict.menuOptions[opt.value];
+                }
+            });
+
+            const dateInput = document.getElementById('vip_date');
+            dateInput.placeholder = dict.datePlaceholder;
+            if (dateInput.value === i18n.tr.defaultSeasonValue || dateInput.value === i18n.en.defaultSeasonValue) {
+                dateInput.value = dict.defaultSeasonValue;
+            }
+
+            setFloorplanMode(currentFloorplanMode);
+            updateVipPreview();
+        }
+
+        // Interactive SVG Floorplan Simulator
+        function setFloorplanMode(modeKey) {
+            currentFloorplanMode = modeKey;
+            const guestMap = { '350': 350, '550': 550, '750': 750 };
+            currentFloorplanGuests = guestMap[modeKey] || 550;
+
+            const dict = i18n[currentLang];
+            const modeData = dict.floorplanModes[modeKey];
+            if (!modeData) return;
+
+            document.querySelectorAll('.fp-mode-btn').forEach(btn => {
+                btn.classList.remove('border-gold', 'bg-gold-metallic', 'text-obsidian', 'shadow-[0_0_20px_rgba(212,175,55,0.3)]');
+                btn.classList.add('border-gold/25', 'bg-white/5', 'text-slate-300');
+            });
+            const activeBtn = document.getElementById(`fp-btn-${modeKey}`);
+            if (activeBtn) {
+                activeBtn.classList.remove('border-gold/25', 'bg-white/5', 'text-slate-300');
+                activeBtn.classList.add('border-gold', 'bg-gold-metallic', 'text-obsidian', 'shadow-[0_0_20px_rgba(212,175,55,0.3)]');
+            }
+
+            document.getElementById('fp-tables').textContent = modeData.tables;
+            document.getElementById('fp-pist').textContent = modeData.pist;
+            document.getElementById('fp-staff').textContent = modeData.staff;
+            document.getElementById('fp-badge-label').textContent = modeData.badge;
+
+            const layer = document.getElementById('svg-tables-layer');
+            layer.innerHTML = '';
+
+            const rows = modeKey === '350' ? 4 : modeKey === '550' ? 5 : 6;
+            const colsPerSide = modeKey === '350' ? 3 : modeKey === '550' ? 4 : 5;
+            const isLight = currentTheme === 'light';
+
+            for (let r = 0; r < rows; r++) {
+                const cy = 84 + r * (232 / Math.max(rows - 1, 1));
+                for (let c = 0; c < colsPerSide; c++) {
+                    const lx = 48 + c * (215 / colsPerSide);
+                    const rx = 592 - c * (215 / colsPerSide);
+
+                    if (Math.hypot(lx - 320, cy - 182) < 68 || Math.hypot(rx - 320, cy - 182) < 68) {
+                        continue;
+                    }
+
+                    [lx, rx].forEach(cx => {
+                        const group = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+
+                        const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                        circle.setAttribute('cx', cx.toFixed(1));
+                        circle.setAttribute('cy', cy.toFixed(1));
+                        circle.setAttribute('r', modeKey === '750' ? '8.5' : '10.5');
+                        circle.setAttribute('fill', isLight ? '#FFFFFF' : '#131C33');
+                        circle.setAttribute('stroke', isLight ? '#8A6518' : '#D4AF37');
+                        circle.setAttribute('stroke-width', isLight ? '1.5' : '1.3');
+
+                        const centerDot = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                        centerDot.setAttribute('cx', cx.toFixed(1));
+                        centerDot.setAttribute('cy', cy.toFixed(1));
+                        centerDot.setAttribute('r', '2.4');
+                        centerDot.setAttribute('fill', isLight ? '#704F0E' : '#F3E5AB');
+
+                        group.appendChild(circle);
+                        group.appendChild(centerDot);
+                        layer.appendChild(group);
+                    });
+                }
+            }
+        }
+
+        function syncSimulatorToConcierge() {
+            const slider = document.getElementById('vip_guest_slider');
+            slider.value = currentFloorplanGuests;
+            updateVipPreview();
+            document.getElementById('vip-concierge').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        function switchGalaTab(tabKey) {
+            currentGalaTabKey = tabKey;
+
+            document.querySelectorAll('.gtab-btn').forEach(btn => {
+                btn.classList.remove('bg-gold-metallic', 'text-obsidian', 'shadow-sm');
+                btn.classList.add('text-slate-300');
+            });
+
+            document.querySelectorAll('.gpanel').forEach(panel => {
+                panel.classList.add('hidden');
+            });
+
+            const activeBtn = document.getElementById(`gtab-${tabKey}`);
+            const activePanel = document.getElementById(`gpanel-${tabKey}`);
+            if (activeBtn) {
+                activeBtn.classList.remove('text-slate-300');
+                activeBtn.classList.add('bg-gold-metallic', 'text-obsidian', 'shadow-sm');
+            }
+            if (activePanel) {
+                activePanel.classList.remove('hidden');
+            }
+        }
+
+        function applyGalaPackageToConcierge() {
+            document.querySelectorAll('input[name="vip_event"]').forEach(radio => {
+                if (radio.value === currentGalaTabKey) {
+                    radio.checked = true;
+                }
+            });
+            updateVipPreview();
+            document.getElementById('vip-concierge').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        function updateVipPreview() {
+            const dict = i18n[currentLang];
+            const eventKey = document.querySelector('input[name="vip_event"]:checked').value;
+            const eventLabel = dict.eventLabels[eventKey];
+            const guests = document.getElementById('vip_guest_slider').value;
+            const menuKey = document.getElementById('vip_menu').value;
+            const menuLabel = dict.menuOptions[menuKey];
+            const season = document.getElementById('vip_date').value.trim() || (currentLang === 'tr' ? 'Belirtilmedi' : 'Flexible Date');
+
+            document.getElementById('vip_guest_display').textContent = `${guests} ${dict.guestUnit}`;
+
+            if (currentLang === 'tr') {
+                document.getElementById('vip-live-summary').innerHTML =
+                    `Merhaba Nirvana Düğün Salonu, <strong class="text-gold-light">${eventLabel}</strong> organizasyonumuz için <strong class="text-gold-light">${guests} Kişi</strong> katılım ve <strong class="text-gold-light">${menuLabel}</strong> tercihiyle <strong class="text-gold-light">${season}</strong> döneminde müsaitlik ve VIP paket teklifi almak istiyoruz.`;
+            } else {
+                document.getElementById('vip-live-summary').innerHTML =
+                    `Hello Nirvana Wedding Palace, we would like to request date availability and a VIP quote for our <strong class="text-gold-light">${eventLabel}</strong> with <strong class="text-gold-light">${guests} Guests</strong> and <strong class="text-gold-light">${menuLabel}</strong> during <strong class="text-gold-light">${season}</strong>.`;
+            }
+        }
+
+        function sendVipWhatsApp() {
+            const dict = i18n[currentLang];
+            const eventKey = document.querySelector('input[name="vip_event"]:checked').value;
+            const eventLabel = dict.eventLabels[eventKey];
+            const guests = document.getElementById('vip_guest_slider').value;
+            const menuKey = document.getElementById('vip_menu').value;
+            const menuLabel = dict.menuOptions[menuKey];
+            const season = document.getElementById('vip_date').value.trim() || (currentLang === 'tr' ? 'Belirtilmedi' : 'Flexible Date');
+
+            let text = '';
+            if (currentLang === 'tr') {
+                text = `Merhaba Nirvana Düğün Salonu VIP Concierge ekibi,
+Web siteniz üzerinden özel davet talebi oluşturduk:
+
+👑 *Organizasyon Konsepti:* ${eventLabel}
+🥂 *Davetli Kapasitesi:* ${guests} Kişi
+🍽️ *İkram Tercihi:* ${menuLabel}
+📅 *Planlanan Dönem:* ${season}
+
+Müsait tarihleriniz ve VIP paket detaylarınız için dönüş rica ederiz.`;
+            } else {
+                text = `Hello Nirvana Wedding Palace VIP Concierge team,
+We have created a bespoke celebration inquiry via your website:
+
+👑 *Celebration Concept:* ${eventLabel}
+🥂 *Guest Capacity:* ${guests} Guests
+🍽️ *Catering Preference:* ${menuLabel}
+📅 *Preferred Season / Date:* ${season}
+
+Please share your available dates and VIP package details.`;
+            }
+
+            window.open(`https://wa.me/905012182325?text=${encodeURIComponent(text)}`, '_blank', 'noopener,noreferrer');
+        }
+
+        function openVipLightboxByKey(galleryKey, src) {
+            const titleKey = `${galleryKey}Title`;
+            const localizedCaption = i18n[currentLang][titleKey] || 'Nirvana Wedding Palace';
+            document.getElementById('vip-lightbox-img').src = src;
+            document.getElementById('vip-lightbox-caption').textContent = localizedCaption;
+            document.getElementById('vip-lightbox').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeVipLightbox() {
+            document.getElementById('vip-lightbox').classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeVipLightbox();
+        });
+
+        window.addEventListener('DOMContentLoaded', () => {
+            setFloorplanMode('550');
+            updateVipPreview();
+        });
+    </script>
+</body>
+</html>
